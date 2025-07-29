@@ -1,0 +1,37 @@
+# FastAPI Blog Post Management API - Dependencies
+# 
+# This file contains all the Python packages required to run the
+# Flaxem Systems FastAPI applications (main.py and web.py)
+#
+# Installation: pip install -r requirements.txt
+
+# Core FastAPI framework
+fastapi>=0.104.1
+
+# Data validation and serialization
+pydantic>=2.5.0
+
+# ASGI server for running FastAPI applications
+uvicorn[standard]>=0.24.0
+
+# Optional: For production deployment
+gunicorn>=21.2.0
+
+# Optional: For enhanced development experience
+python-multipart>=0.0.6  # For form data handling
+python-jose[cryptography]>=3.3.0  # For JWT tokens (if authentication is added)
+passlib[bcrypt]>=1.7.4  # For password hashing (if authentication is added)
+
+# Optional: For database integration (if persistent storage is added)
+# sqlalchemy>=2.0.23
+# alembic>=1.13.0  # For database migrations
+# psycopg2-binary>=2.9.9  # For PostgreSQL
+# sqlite3  # Built into Python for SQLite
+
+# Development dependencies (install with: pip install -r requirements.txt -r requirements-dev.txt)
+# pytest>=7.4.3
+# pytest-asyncio>=0.21.1
+# httpx>=0.25.2  # For testing FastAPI endpoints
+# black>=23.11.0  # Code formatter
+# flake8>=6.1.0  # Linter
+# mypy>=1.7.1  # Type checker
